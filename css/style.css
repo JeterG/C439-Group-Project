@@ -1,5 +1,14 @@
-body::before{
-    display: block;
-    content : "";
-    height : 60px
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+#wallpaper {
+  background:
+    linear-gradient(rgba(100, 160, 100, 0.5), rgba(100, 160, 100, 0.5)),
+    url(/images/backgroundwallpaper.png);
+  background-size: 100% 100%;
+  border-radius: 0 0 50% 50% / 0 0 50px 50px;
+  height: 100vh;
 }
