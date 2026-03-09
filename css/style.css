@@ -4,7 +4,7 @@ body::before {
   height: 60px;
 }
 
-#wallpaper {
+.wallpaper {
   background:
     linear-gradient(rgba(100, 160, 100, 0.5), rgba(100, 160, 100, 0.5)),
     url(/images/backgroundwallpaper.png);
