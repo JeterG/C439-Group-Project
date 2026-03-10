@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Import the Css for bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Import the bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Import custom css -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>E-Grocery</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="Index.html" class="navbar-brand"
+          ><i class="bi bi-basket me-1"></i>E-Grocery</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <!-- Left side -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="Index.html" class="nav-link active"
+                ><i class="bi bi-shop-window me-1"></i>Storefront</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="search.html" class="nav-link"
+                ><i class="bi bi-search me-1"></i>Search</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><i class="bi bi-info-circle me-1"></i>About</a
+              >
+            </li>
+          </ul>
+          <!-- Right side -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><i class="bi bi-cart3 me-1"></i>Cart</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><i class="bi bi-bag-check-fill me-1"></i>Checkout</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><i class="bi bi-box-arrow-in-right me-1"></i>Account</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End navbar -->
+    <!-- Start Main body div -->
+    <div class="wallpaper">
+      <!-- Section 1 -->
+      <section class="container mt-4">
+        <div class="row g-3">
+          <!-- Left big card -->
+          <div class="col-md-6">
+            <div class="card p-3 h-100">
+              <h5 class="fw-bold">Fresh Groceries, Delivered Fast</h5>
+              <p class="fw-medium">
+                Shop from hundreds of local and imported products — from
+                farm-fresh produce to pantry staples — all from the comfort of
+                your home.
+              </p>
+              <div class="d-flex gap-2 mt-auto"></div>
+            </div>
+          </div>
+
+          <!-- Right two cards stacked -->
+          <div class="col-md-6 d-flex flex-column gap-3">
+            <div class="card p-3">
+              <h5 class="fw-bold">Why Shop With Us?</h5>
+              <p class="fw-medium">
+                We partner with trusted local suppliers to bring you the
+                freshest ingredients at competitive prices. No hidden fees, no
+                hassle — just quality groceries delivered straight to your door.
+                Whether you're cooking for one or feeding a family, we've got
+                you covered.
+              </p>
+              <div class="d-flex gap-2 mt-auto"></div>
+            </div>
+
+            <div class="card p-3">
+              <h5 class="fw-bold">New Arrivals Every Week</h5>
+              <p class="small fw-medium">
+                Discover seasonal picks, limited offers, and new products added
+                weekly.
+              </p>
+              <div class="d-flex gap-2 mt-auto"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 2 -->
+      <section class="card container mt-4 p-3">
+        <h2 class="card mb-3 mt-3 text-center">How It Works</h2>
+        <div class="row g-3 align-items-stretch">
+          <div class="col">
+            <div class="card p-3 h-100 text-center">
+              <i class="bi bi-search fs-1 text-success mb-2"></i>
+              <h5>Search</h5>
+              <p class="small fw-medium mb-0">
+                Browse our full catalog by category, keyword, or dietary
+                preference. Finding what you need has never been easier — just
+                type it in and we'll do the rest.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-auto d-md-flex align-items-center">
+            <i class="bi bi-arrow-right fs-1 text-success"></i>
+          </div>
+
+          <div class="col">
+            <div class="card p-3 h-100 text-center">
+              <i class="bi bi-cart-plus fs-1 text-success mb-2"></i>
+              <h5>Add to Cart</h5>
+              <p class="mb-0">
+                Select your items, choose your quantities, and add them to your
+                cart with one click. Review your order anytime before checking
+                out — no pressure, no rush.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-auto d-none d-md-flex align-items-center">
+            <i class="bi bi-arrow-right fs-1 text-success"></i>
+          </div>
+
+          <div class="col">
+            <div class="card p-3 h-100 text-center">
+              <i class="bi-bag-check-fill fs-1 text-success mb-2"></i>
+              <h5>
+                Buy
+                <i class="bi bi-arrow-right"></i>
+                Enjoy <i class="bi bi-arrow-right text-success"></i> Repeat
+              </h5>
+              <p class="mb-0">
+                Complete your purchase securely and schedule a delivery that
+                works for you. Once you taste the difference fresh groceries
+                make, you'll keep coming back.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="card container mt-4 p-3 mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="mb-0">
+            <i class="bi bi-basket2 text-success me-2"></i>What We Offer
+          </h2>
+          <div class="d-flex align-items-center gap-2">
+            <span id="carouselCounter" class="text-muted small"></span>
+            <button id="prevBtn" class="btn btn-outline-secondary btn-sm">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button id="nextBtn" class="btn btn-outline-secondary btn-sm">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div id="carouselTrack" class="row row-cols-2 row-cols-md-4 g-3"></div>
+      </section>
+    </div>
+    <!-- End main body div -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- Start Footer -->
+    <footer class="bg-dark text-white py-3 mt-auto fixed-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Brand col -->
+          <div class="col-md-6">
+            <h5 class="fw-bold mb-1">
+              <i class="bi bi-basket me-1"></i>E-Grocery
+            </h5>
+            <p class="small text-muted mb-0">
+              Fresh groceries delivered to your door. Quality you can taste,
+              prices you'll love.
+            </p>
+          </div>
+
+          <!-- Links col -->
+          <div class="col-md-6">
+            <ul class="navbar-nav flex-row gap-3 justify-content-md-end">
+              <li class="nav-item">
+                <a href="#" class="nav-link text-muted"
+                  ><i class="bi bi-info-circle me-1"></i>About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-muted"
+                  ><i class="bi bi-bag-check-fill me-1"></i>Checkout</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>
