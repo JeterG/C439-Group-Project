@@ -11,6 +11,8 @@
         />
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="cart-data.js"></script>
+        <script src="checkout.js" defer></script>
     </head>
     <body>
         <header>
@@ -47,7 +49,7 @@
 
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Cart</a>
+                                <a href="cart.html" class="nav-link">Cart</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link active">Checkout</a>
@@ -188,24 +190,24 @@
 
                         <div class="summary-row">
                             <span>Subtotal</span>
-                            <span>$42.00</span>
+                            <span id="checkout-subtotal">$0.00</span>
                         </div>
 
                         <div class="summary-row">
                             <span>Delivery</span>
-                            <span>$5.00</span>
+                            <span id="checkout-delivery">$0.00</span>
                         </div>
 
                         <div class="summary-row">
                             <span>Tax</span>
-                            <span>$7.05</span>
+                            <span id="checkout-tax">$0.00</span>
                         </div>
 
                         <hr />
 
                         <div class="summary-row fw-bold fs-5">
                             <span>Total</span>
-                            <span>$54.05</span>
+                            <span id="checkout-total">$0.00</span>
                         </div>
 
                         <p class="summary-note mt-3 mb-0 text-center">
