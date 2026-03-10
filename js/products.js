@@ -1,7 +1,7 @@
 const products = [
   {
     id: 1,
-    name: "Apples",
+    name: "Fuji Apples",
     category: "Produce",
     tags: ["fruit", "produce", "fresh", "snack"],
     price: "$1.29/lb",
@@ -9,7 +9,7 @@ const products = [
   },
   {
     id: 2,
-    name: "Oranges",
+    name: "Navel Oranges",
     category: "Produce",
     tags: ["fruit", "produce", "fresh", "citrus", "snack"],
     price: "$0.99/ea",
@@ -17,7 +17,7 @@ const products = [
   },
   {
     id: 3,
-    name: "Limes",
+    name: "Key Limes",
     category: "Produce",
     tags: ["fruit", "produce", "fresh", "citrus"],
     price: "$0.49/ea",
@@ -33,7 +33,7 @@ const products = [
   },
   {
     id: 5,
-    name: "Tomatoes",
+    name: "Roma Tomatoes",
     category: "Produce",
     tags: ["vegetable", "produce", "fresh"],
     price: "$1.49/lb",
@@ -41,7 +41,7 @@ const products = [
   },
   {
     id: 6,
-    name: "Lettuce",
+    name: "Romaine Lettuce",
     category: "Produce",
     tags: ["vegetable", "produce", "fresh", "salad"],
     price: "$1.99/ea",
@@ -65,7 +65,7 @@ const products = [
   },
   {
     id: 9,
-    name: "Chicken Leg",
+    name: "Chicken Leg Quarters",
     category: "Meat",
     tags: ["meat", "poultry", "chicken", "protein"],
     price: "$5.99/lb",
@@ -81,7 +81,7 @@ const products = [
   },
   {
     id: 11,
-    name: "Ground Beef",
+    name: "Ground Beef (80/20)",
     category: "Meat",
     tags: ["meat", "beef", "protein"],
     price: "$6.99/lb",
@@ -89,7 +89,7 @@ const products = [
   },
   {
     id: 12,
-    name: "Salmon",
+    name: "Atlantic Salmon",
     category: "Seafood",
     tags: ["seafood", "fish", "protein", "omega-3"],
     price: "$12.99/lb",
@@ -121,7 +121,7 @@ const products = [
   },
   {
     id: 16,
-    name: "Almond Milk",
+    name: "Coconut Milk",
     category: "Canned Goods",
     tags: ["canned", "dairy-free", "pantry", "vegan"],
     price: "$2.75/ea",
@@ -129,7 +129,7 @@ const products = [
   },
   {
     id: 17,
-    name: "Tofu",
+    name: "Firm Tofu",
     category: "Dairy & Alternatives",
     tags: ["protein", "vegan", "vegetarian", "soy"],
     price: "$2.99/ea",
@@ -145,7 +145,7 @@ const products = [
   },
   {
     id: 19,
-    name: "Bread",
+    name: "Sourdough Loaf",
     category: "Bakery",
     tags: ["bread", "bakery", "pantry"],
     price: "$5.99/ea",
@@ -153,10 +153,42 @@ const products = [
   },
   {
     id: 20,
-    name: "Olive Oil",
+    name: "Extra Virgin Olive Oil",
     category: "Pantry",
     tags: ["oil", "pantry", "vegan", "cooking"],
     price: "$10.99/ea",
     image: "images/products/product_20.jpg",
   },
+];
+
+const tags = [
+  "fruit",
+  "vegetable",
+  "produce",
+  "fresh",
+  "citrus",
+  "snack",
+  "salad",
+  "root vegetable",
+  "meat",
+  "poultry",
+  "chicken",
+  "protein",
+  "lean",
+  "beef",
+  "seafood",
+  "fish",
+  "omega-3",
+  "canned",
+  "beans",
+  "pantry",
+  "vegan",
+  "dairy-free",
+  "dairy",
+  "soy",
+  "vegetarian",
+  "bread",
+  "bakery",
+  "oil",
+  "cooking",
 ];
