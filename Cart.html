@@ -11,7 +11,10 @@
         />
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="cart-data.js"></script>
+        <script src="cart.js" defer></script>
     </head>
+
     <body>
         <header>
             <nav
@@ -50,7 +53,9 @@
                                 <a href="#" class="nav-link active">Cart</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Checkout</a>
+                                <a href="checkout.html" class="nav-link"
+                                    >Checkout</a
+                                >
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">Account</a>
@@ -144,12 +149,13 @@
                             </button>
                         </div>
 
-                        <button
+                        <a
+                            href="checkout.html"
                             class="btn btn-success w-100 py-2 mb-3"
                             id="checkout-btn"
+                            >Proceed to Checkout</a
                         >
-                            Proceed to Checkout
-                        </button>
+
                         <p class="summary-note mb-0 text-center">
                             Secure checkout with card or online payment
                         </p>
