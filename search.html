@@ -132,7 +132,15 @@
                 <h2 class="mb-0">
                   <i class="bi bi-basket2 text-success me-2"></i>Results
                 </h2>
-                <span id="resultCount" class="text-muted small"></span>
+                <div class="d-flex align-items-center gap-2">
+                  <span id="resultCount" class="text-muted small"></span>
+                  <button id="prevBtn" class="btn btn-outline-secondary btn-sm">
+                    <i class="bi bi-chevron-left"></i>
+                  </button>
+                  <button id="nextBtn" class="btn btn-outline-secondary btn-sm">
+                    <i class="bi bi-chevron-right"></i>
+                  </button>
+                </div>
               </div>
               <div
                 id="resultsGrid"
@@ -144,6 +152,38 @@
         <!-- End search and filter -->
       </div>
     </div>
+    <footer class="bg-dark text-white py-3 mt-auto fixed-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Brand col -->
+          <div class="col-md-6">
+            <h5 class="fw-bold mb-1">
+              <i class="bi bi-basket me-1"></i>E-Grocery
+            </h5>
+            <p class="small text-muted mb-0">
+              Fresh groceries delivered to your door. Quality you can taste,
+              prices you'll love.
+            </p>
+          </div>
+
+          <!-- Links col -->
+          <div class="col-md-6">
+            <ul class="navbar-nav flex-row gap-3 justify-content-md-end">
+              <li class="nav-item">
+                <a href="#" class="nav-link text-muted"
+                  ><i class="bi bi-info-circle me-1"></i>About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-muted"
+                  ><i class="bi bi-bag-check-fill me-1"></i>Checkout</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/products.js"></script>

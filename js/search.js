@@ -1,4 +1,8 @@
 // Build on index.js in order to build the frame that is displayed in the search grid
+const PAGE_SIZE = 9; // 3 rows of 3
+let currentPage = 0;
+let filteredResults = [];
+
 function buildCard(item) {
   return `
     <div class="col">
@@ -17,14 +21,34 @@ function buildCard(item) {
     </div>`;
 }
 
-// Keep track of the tags that are going to be posted, build them and the ndisplay them through getting the tags or by the filtered tag
+// Render only the current page slice of filteredResults
+function renderPage() {
+  const start = currentPage * PAGE_SIZE;
+  const end = Math.min(start + PAGE_SIZE, filteredResults.length);
+  const pageItems = filteredResults.slice(start, end);
+
+  document.getElementById("resultsGrid").innerHTML = pageItems
+    .map(buildCard)
+    .join("");
+
+  // Counter and buttons
+  document.getElementById("resultCount").textContent =
+    filteredResults.length === 0
+      ? "0 results"
+      : start + 1 + "–" + end + " of " + filteredResults.length;
+
+  document.getElementById("prevBtn").disabled = currentPage === 0;
+  document.getElementById("nextBtn").disabled = end >= filteredResults.length;
+}
+
+// Keep track of the tags that are going to be posted, build them and then display them
 function render() {
   const query = document
     .getElementById("searchInput")
     .value.toLowerCase()
     .trim();
 
-  const filtered = products.filter(function (item) {
+  filteredResults = products.filter(function (item) {
     const matchesSearch =
       query === "" ||
       item.name.toLowerCase().includes(query) ||
@@ -40,15 +64,22 @@ function render() {
     return matchesSearch && matchesTags;
   });
 
-  const filteredCards = filtered.map(buildCard);
-  const filteredHTML = filteredCards.join("");
-
-  document.getElementById("resultsGrid").innerHTML = filteredHTML;
-  document.getElementById("resultCount").textContent =
-    filtered.length + " result(s)";
+  // Reset to first page whenever filters/search change
+  currentPage = 0;
+  renderPage();
 }
 
 document.getElementById("searchInput").addEventListener("input", render);
+
+document.getElementById("prevBtn").addEventListener("click", function () {
+  currentPage--;
+  renderPage();
+});
+
+document.getElementById("nextBtn").addEventListener("click", function () {
+  currentPage++;
+  renderPage();
+});
 
 buildTagUI();
 render();
