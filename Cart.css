@@ -32,7 +32,6 @@ body {
     font-size: 0.95rem;
 }
 
-/* Optional cart item style for when JS adds products later */
 .cart-item {
     padding: 16px 0;
     border-bottom: 1px solid #e9ecef;
