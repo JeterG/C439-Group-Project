@@ -10,7 +10,7 @@ function buildTagUI() {
     })
     .join("");
 
-//  Show selected tags and nothing if they are not selected
+  //  Show selected tags and nothing if they are not selected
   document.getElementById("activeTagList").innerHTML = activeTags.length
     ? activeTags
         .map(function (tag) {
@@ -20,7 +20,7 @@ function buildTagUI() {
     : '<span class="text-muted small">No tags selected</span>';
 }
 
-// remove or not a tag if its alrady toggled
+// toggle a tag if it's already selected
 document
   .getElementById("tagDropdownMenu")
   .addEventListener("click", function (e) {
