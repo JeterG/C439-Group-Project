@@ -15,8 +15,8 @@ An e-commerce website for grocery shopping, built as a group project for C439. T
 
 - HTML5
 - CSS3
-- JavaScript (ES6+)
-- Bootstrap 5.3.3
+- JavaScript
+- Bootstrap
 - Bootstrap Icons
 
 ## Project Structure
