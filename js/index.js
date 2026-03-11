@@ -1,5 +1,4 @@
-// Immport hte products.js before this file in the html so that the variales can be loaded
-
+// Import the products.js before this file in the html so that the variables can be loaded
 const PAGE_SIZE = 4;
 let page = 0;
 
@@ -24,7 +23,7 @@ function render() {
   const start = page * PAGE_SIZE;
   const end = Math.min(start + PAGE_SIZE, products.length);
 
-  const pageItems = products.slice(start, end);//The range of the images that are going to be slected
+  const pageItems = products.slice(start, end); //The range of the images that are going to be slected
   const pageCards = pageItems.map(buildCard);
   const pageHTML = pageCards.join("");
 

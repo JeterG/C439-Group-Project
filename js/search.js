@@ -25,9 +25,9 @@ function buildCard(item) {
 function renderPage() {
   const start = currentPage * PAGE_SIZE;
   const end = Math.min(start + PAGE_SIZE, filteredResults.length);
-  const pageItems = filteredResults.slice(start, end);
 
-  document.getElementById("resultsGrid").innerHTML = pageItems
+  document.getElementById("resultsGrid").innerHTML = filteredResults
+    .slice(start, end)
     .map(buildCard)
     .join("");
 
@@ -35,8 +35,7 @@ function renderPage() {
   document.getElementById("resultCount").textContent =
     filteredResults.length === 0
       ? "0 results"
-      : start + 1 + "–" + end + " of " + filteredResults.length;
-
+      : `${start + 1}–${end} of ${filteredResults.length}`;
   document.getElementById("prevBtn").disabled = currentPage === 0;
   document.getElementById("nextBtn").disabled = end >= filteredResults.length;
 }
@@ -53,14 +52,10 @@ function render() {
       query === "" ||
       item.name.toLowerCase().includes(query) ||
       item.category.toLowerCase().includes(query) ||
-      item.tags.some(function (tag) {
-        return tag.includes(query);
-      });
+      item.tags.some((tag) => tag.includes(query));
     const matchesTags =
       activeTags.length === 0 ||
-      activeTags.every(function (tag) {
-        return item.tags.includes(tag);
-      });
+      activeTags.every((tag) => item.tags.includes(tag));
     return matchesSearch && matchesTags;
   });
 
@@ -70,12 +65,10 @@ function render() {
 }
 
 document.getElementById("searchInput").addEventListener("input", render);
-
 document.getElementById("prevBtn").addEventListener("click", function () {
   currentPage--;
   renderPage();
 });
-
 document.getElementById("nextBtn").addEventListener("click", function () {
   currentPage++;
   renderPage();
