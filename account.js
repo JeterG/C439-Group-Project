@@ -23,8 +23,10 @@ const sampleOrders = [
 ];
 
 function validatePassword() {
-    password = document.getElementById('registerPassword').value;
-    confirmPassword = document.getElementById('registerConfirmPassword').value;
+    let password = document.getElementById('registerPassword').value;
+    let confirmPassword = document.getElementById(
+        'registerConfirmPassword',
+    ).value;
 
     if (password !== confirmPassword) {
         alert('Passwords do not match!');
