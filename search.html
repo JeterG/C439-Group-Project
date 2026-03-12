@@ -1,20 +1,19 @@
 <!doctype html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0" />
         <!-- Import the Css for bootstrap 5 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-        />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+              rel="stylesheet" />
         <!-- Import the bootstrap icons -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css"
-        />
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css" />
         <!-- Import custom css -->
-        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet"
+              href="/css/style.css" />
         <title>Search — E-Grocery</title>
     </head>
 
@@ -22,55 +21,44 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-3 fixed-top">
             <div class="container">
-                <a href="Index.html" class="navbar-brand"
-                    ><i class="bi bi-basket me-1"></i>E-Grocery</a
-                >
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navmenu"
-                >
+                <a href="Index.html"
+                   class="navbar-brand"><i class="bi bi-basket me-1"></i>E-Grocery</a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navmenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navmenu">
+                <div class="collapse navbar-collapse"
+                     id="navmenu">
                     <!-- Left side -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="Index.html" class="nav-link"
-                                ><i class="bi bi-shop-window me-1"></i
-                                >Storefront</a
-                            >
+                            <a href="Index.html"
+                               class="nav-link"><i class="bi bi-shop-window me-1"></i>Storefront</a>
                         </li>
                         <li class="nav-item">
-                            <a href="search.html" class="nav-link active"
-                                ><i class="bi bi-search me-1"></i>Search</a
-                            >
+                            <a href="search.html"
+                               class="nav-link active"><i class="bi bi-search me-1"></i>Search</a>
                         </li>
                         <li class="nav-item">
-                            <a href="contact.html" class="nav-link"
-                                ><i class="bi bi-info-circle me-1"></i>About</a
-                            >
+                            <a href="contact.html"
+                               class="nav-link"><i class="bi bi-info-circle me-1"></i>About</a>
                         </li>
                     </ul>
                     <!-- Right side -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a href="Cart.html" class="nav-link"
-                                ><i class="bi bi-cart3 me-1"></i>Cart</a
-                            >
+                            <a href="Cart.html"
+                               class="nav-link"><i class="bi bi-cart3 me-1"></i>Cart</a>
                         </li>
                         <li class="nav-item">
-                            <a href="checkout.html" class="nav-link"
-                                ><i class="bi bi-bag-check-fill me-1"></i
-                                >Checkout</a
-                            >
+                            <a href="checkout.html"
+                               class="nav-link"><i class="bi bi-bag-check-fill me-1"></i>Checkout</a>
                         </li>
                         <li class="nav-item">
-                            <a href="account.html" class="nav-link"
-                                ><i class="bi bi-box-arrow-in-right me-1"></i
-                                >Account</a
-                            >
+                            <a href="account.html"
+                               class="nav-link"><i class="bi bi-box-arrow-in-right me-1"></i>Account</a>
                         </li>
                     </ul>
                 </div>
@@ -85,47 +73,36 @@
                     <div class="col-md-3">
                         <div class="card p-3">
                             <h6 class="fw-bold mb-2">
-                                <i class="bi bi-search me-1 text-success"></i
-                                >Search
+                                <i class="bi bi-search me-1 text-success"></i>Search
                             </h6>
-                            <input
-                                type="text"
-                                id="searchInput"
-                                class="form-control form-control-sm mb-3 text-lowercase"
-                                placeholder="e.g. chicken, vegan..."
-                            />
+                            <input type="text"
+                                   id="searchInput"
+                                   class="form-control form-control-sm mb-3 text-lowercase"
+                                   placeholder="e.g. chicken, vegan..." />
 
                             <h6 class="fw-bold mb-2">
-                                <i class="bi bi-tags me-1 text-success"></i
-                                >Filter by Tag
+                                <i class="bi bi-tags me-1 text-success"></i>Filter by Tag
                             </h6>
                             <div class="dropdown mb-2">
-                                <button
-                                    class="btn btn-outline-secondary btn-sm w-100 dropdown-toggle"
-                                    type="button"
-                                    data-bs-toggle="dropdown"
-                                >
+                                <button class="btn btn-outline-secondary btn-sm w-100 dropdown-toggle"
+                                        type="button"
+                                        data-bs-toggle="dropdown">
                                     Select tags...
                                 </button>
                                 <!-- Built and injected through the search.js -->
-                                <ul
-                                    class="dropdown-menu w-100"
+                                <ul class="dropdown-menu w-100"
                                     id="tagDropdownMenu"
-                                    style="max-height: 200px; overflow-y: auto"
-                                ></ul>
+                                    style="max-height: 200px; overflow-y: auto"></ul>
                             </div>
                             <!--
               Display the tags athat are sleected as active for filtering. -->
-                            <div id="activeTagList" class="mb-2">
-                                <span class="text-muted small"
-                                    >No tags selected</span
-                                >
+                            <div id="activeTagList"
+                                 class="mb-2">
+                                <span class="text-muted small">No tags selected</span>
                             </div>
 
-                            <button
-                                id="clearTagsBtn"
-                                class="btn btn-outline-secondary btn-sm w-100"
-                            >
+                            <button id="clearTagsBtn"
+                                    class="btn btn-outline-secondary btn-sm w-100">
                                 <i class="bi bi-x-circle me-1"></i>Clear All
                                 Tags
                             </button>
@@ -135,38 +112,25 @@
                     <!-- Grid -->
                     <div class="col-md-9">
                         <div class="card p-3 mb-4">
-                            <div
-                                class="d-flex justify-content-between align-items-center mb-3"
-                            >
+                            <div class="d-flex justify-content-between align-items-center mb-3">
                                 <h2 class="mb-0">
-                                    <i
-                                        class="bi bi-basket2 text-success me-2"
-                                    ></i
-                                    >Results
+                                    <i class="bi bi-basket2 text-success me-2"></i>Results
                                 </h2>
                                 <div class="d-flex align-items-center gap-2">
-                                    <span
-                                        id="resultCount"
-                                        class="text-muted small"
-                                    ></span>
-                                    <button
-                                        id="prevBtn"
-                                        class="btn btn-outline-secondary btn-sm"
-                                    >
+                                    <span id="resultCount"
+                                          class="text-muted small"></span>
+                                    <button id="prevBtn"
+                                            class="btn btn-outline-secondary btn-sm">
                                         <i class="bi bi-chevron-left"></i>
                                     </button>
-                                    <button
-                                        id="nextBtn"
-                                        class="btn btn-outline-secondary btn-sm"
-                                    >
+                                    <button id="nextBtn"
+                                            class="btn btn-outline-secondary btn-sm">
                                         <i class="bi bi-chevron-right"></i>
                                     </button>
                                 </div>
                             </div>
-                            <div
-                                id="resultsGrid"
-                                class="row row-cols-2 row-cols-md-3 g-3"
-                            ></div>
+                            <div id="resultsGrid"
+                                 class="row row-cols-2 row-cols-md-3 g-3"></div>
                         </div>
                     </div>
                 </div>
@@ -191,20 +155,14 @@
 
                     <!-- Links col -->
                     <div class="col-md-6">
-                        <ul
-                            class="navbar-nav flex-row gap-3 justify-content-md-end"
-                        >
+                        <ul class="navbar-nav flex-row gap-3 justify-content-md-end">
                             <li class="nav-item">
-                                <a href="#" class="nav-link text-muted"
-                                    ><i class="bi bi-info-circle me-1"></i
-                                    >About</a
-                                >
+                                <a href="#"
+                                   class="nav-link text-muted"><i class="bi bi-info-circle me-1"></i>About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link text-muted"
-                                    ><i class="bi bi-bag-check-fill me-1"></i
-                                    >Checkout</a
-                                >
+                                <a href="#"
+                                   class="nav-link text-muted"><i class="bi bi-bag-check-fill me-1"></i>Checkout</a>
                             </li>
                         </ul>
                     </div>
@@ -218,4 +176,5 @@
         <script src="js/searchDropdown.js"></script>
         <script src="js/search.js"></script>
     </body>
+
 </html>

@@ -1,4 +1,4 @@
 function submitContact() {
-    alert('Contact form successfully submitted!');
-    return false;
+  alert("Contact form successfully submitted!");
+  return false;
 }
